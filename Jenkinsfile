@@ -20,8 +20,8 @@ pipeline{
         stage('Build'){
             steps{
                 sh''' 
-                chmod 777 app.sh
-                ./app.sh
+                chmod 777 app-new.sh
+                ./app-new.sh
                 '''
             }
         }
