@@ -12,7 +12,7 @@ pipeline{
               git(
                 url: "${GIT_URL}",
                 branch: "main",
-                credentialsId: ${GIT_CRED}
+                credentialsId: "${GIT_CRED}"
             )
           }
          }
