@@ -3,7 +3,7 @@ pipeline{
 
     environment{
         GIT_CRED = 'ci-app-token'
-        GIT_URL = 'https://github.com/devendersingh1999/app-repo.git'
+        GIT_URL = 'https://github.com/devendersingh1999/application-repo.git'
     }
 
     stages{
@@ -11,7 +11,7 @@ pipeline{
           steps{
               git(
                 url: "${GIT_URL}",
-                branch: "app-repo",
+                branch: "app-new", //branch app-new 
                 credentialsId: "${GIT_CRED}"
             )
           }
