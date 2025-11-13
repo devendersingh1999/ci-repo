@@ -11,7 +11,7 @@ pipeline{
           steps{
               git(
                 url: "${GIT_URL}",
-                branch: "main",
+                branch: "app-repo",
                 credentialsId: "${GIT_CRED}"
             )
           }
